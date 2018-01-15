@@ -1,0 +1,15 @@
+@font-face {
+    font-family:  thinfont;
+    src: url('../assets/fonts/light.ttf');
+}
+.navbar dropdown li a:hover {
+    background-color: rgba(245, 245, 245, 0.97);
+}
+.drdwn{
+
+}
+
+.drdwn:hover{
+    background: rgba(250, 248, 255, 0);
+    color: #ffffff;
+}

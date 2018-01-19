@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.esm.bundle.js"></script>
+
+
+
+    <style>
+        .btn {
+            border: 2px solid black;
+            background-color: rgba(255, 255, 255, 0);
+            color: black;
+            padding: 7px 14px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid red;
+            border-radius: 35px;
+
+        }
+
+        /* Green */
+        .success {
+            border-color: #cb2a9e;
+            color: #cb2a9e;
+        }
+
+        .success:hover {
+            background: linear-gradient(-270deg, #cb2a9e,#ff0e85);
+            color: white;
+        }
+
+        /* Blue */
+        .info {
+            border-color: #2196F3;
+            color: dodgerblue
+        }
+
+        .info:hover {
+            background: #2196F3;
+            color: white;
+        }
+
+        /* Orange */
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        /* Red */
+        .danger {
+            border-color: #f44336;
+            color: red
+        }
+
+        .danger:hover {
+            background: #f44336;
+            color: white;
+        }
+
+        /* Gray */
+        .default {
+            border-color: #e7e7e7;
+            color: black;
+        }
+
+        .default:hover {
+            background: #e7e7e7;
+        }
+    </style>
+
+
+
+
+
+<!--
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                    $("#navbar").css("background-color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#about").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#home").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#cources").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#services").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#portfolio").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#webname").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+
+                } else {
+                    $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
+                    $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#cources").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#services").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#portfolio").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#webname").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+
+                }
+            });
+        });
+    </script>
+
+-->
+    <!-- Demo styles -->
+
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="../css/ihover.min.css">
+    <link rel="stylesheet" href="../css/ihover1.css">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default" style="background: linear-gradient(-270deg, #cb2a9e,#ff0e85); border-color: transparent; width: 100%;  " id="navbar">
+    <div class="container-fluid" id="navbar2" style="background: linear-gradient(-270deg, #cb2a9e,#ff0e85);">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="color:white; " id="webname">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li  style="color:white;"><a href="index.html" style="color:white; " id="home"> <b>HOME</b></a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white; " id="about">ABOUT <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background:#cb1b58; ">
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">About Us</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">Team</a></li>
+                </ul>
+            </li>
+            <li><a href="#" style="color:white; " id="services">SERVICES</a></li>
+            <li><a href="#" style="color:white; " id="cources">COURCES</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white; " id="portfolio">PHORTFOLIO<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background:#ff1fa8; ">
+
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"   > Bridal</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Carousel</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"> Party Makeup</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Editorial</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">Events</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Seminars</a></li>
+                    <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"> Shows</a></li>
+
+
+
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+
+<div class="container" style=" height: 270px;">
+
+    <div class="row" style="padding-left: 3%" >
+
+
+        <div class="col-sm-3" style="text-align: center">
+
+            <button class="btn success"> Bridal Services</button>
+
+            <!-- normal -->
+
+                  <!-- end normal -->
+        </div>
+
+
+        <div class="col-sm-3" style="text-align: center">
+
+            <button class="btn success"> Beauty Services</button>
+
+
+            <!-- colored -->
+
+            <!-- end colored -->
+        </div>
+
+
+        <div class="col-sm-3" style="text-align: center">
+            <button class="btn success"> Hair Services</button>
+
+            <!-- colored -->
+
+            <!-- end colored -->
+        </div>
+
+
+
+
+        <div class="col-sm-3" style="text-align: center">
+
+            <!-- colored -->
+            <button class="btn success"> Head & Foot Therapy</button>
+
+
+
+            <!-- end colored -->
+        </div>
+
+</div>
+
+
+<div class="container-fluide" style="padding:10%;">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

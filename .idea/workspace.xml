@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332b0ee6-dab9-4c3a-a4d5-a7bc01ce3f31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/creap.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/image/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/image/instagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/image/sbs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/image/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/course.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/portfolio.html" afterPath="$PROJECT_DIR$/html/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/services.html" afterPath="$PROJECT_DIR$/html/services.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -433,12 +422,12 @@
       <workItem from="1516037905163" duration="8429000" />
       <workItem from="1516109733439" duration="2030000" />
       <workItem from="1516388243289" duration="17152000" />
-      <workItem from="1516470914313" duration="9086000" />
+      <workItem from="1516470914313" duration="9416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36697000" />
+    <option name="totallyTimeSpent" value="37027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="698" extended-state="0" />

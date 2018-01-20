@@ -1,6 +1,6 @@
 @font-face {
     font-family:  thinfont;
-    src: url('../assets/fonts/light.ttf');
+    src: url('../assets/fonts/creap.otf');
 }
 .navbar dropdown li a:hover {
     background-color: rgba(245, 245, 245, 0.97);
@@ -165,4 +165,31 @@ body {
     filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
     M11=2, M12=-0, M21=0, M22=2);
 
+}
+
+.fb{
+    border: 1px  solid #ffffff; width: 30px;height: 30px; border-radius: 50px; background: rgba(6, 17, 132, 0);margin-top: 20px;
+}
+
+
+.fb:hover{
+    width: 30px;height: 30px; border-radius: 50px; background: #215ba7;margin-top: 20px;
+}
+
+
+
+
+.tw{
+    border: 1px  solid #ffffff;width: 30px;height: 30px; border-radius: 50px; background: rgba(80, 216, 255, 0);margin-top: 20px;
+}
+
+
+.tw:hover{
+    width: 30px;height: 30px; border-radius: 50px; background: #50d8ff;margin-top: 20px;
+}
+.in{
+    border: 1px  solid #ffffff;width: 30px;height: 30px; border-radius: 50px; background:linear-gradient(-270deg, rgba(203, 42, 158, 0), rgba(255, 14, 133, 0));margin-top: 20px;
+}
+.in:hover{
+    width: 30px;height: 30px; border-radius: 50px; background:linear-gradient(-270deg, #cb2a9e,#ff0e85);margin-top: 20px;
 }

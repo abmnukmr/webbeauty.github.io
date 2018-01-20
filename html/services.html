@@ -89,29 +89,17 @@
 
 
 
-<!--
+
 
     <script>
         $(document).ready(function(){
             $(window).scroll(function() { // check if scroll event happened
                 if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
-                    $("#navbar").css("background-color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#about").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#home").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#cources").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#services").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#portfolio").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#webname").css("color", "#cb1b58"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#navbar").css("position", "fixed"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
 
 
                 } else {
-                    $("#navbar").css("background-color", "transparent"); // if not, change it back to transparent
-                    $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#cources").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#services").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#portfolio").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                    $("#webname").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#navbar").css("position", "relative"); // if not, change it back to transparent
 
 
                 }
@@ -119,7 +107,7 @@
         });
     </script>
 
--->
+
     <!-- Demo styles -->
 
     <style>
@@ -167,7 +155,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default  navbar-fixed-top" style="background: linear-gradient(-270deg, #cb2a9e,#ff0e85); border-color: transparent; width: 100%;  " id="navbar">
+<nav class="navbar navbar-default  " style="background: linear-gradient(-270deg, #cb2a9e,#ff0e85); border-color: transparent; width: 100%; z-index: 5;  " id="navbar">
     <div class="container-fluid" id="navbar2" style="background: linear-gradient(-270deg, #cb2a9e,#ff0e85);">
         <div class="navbar-header">
             <a class="navbar-brand" href="#" style="color:white; " id="webname">WebSiteName</a>
@@ -205,14 +193,14 @@
     </div>
 </nav>
 
-<div class="container" style=" ">
+<div class="container" style="margin-top:0%; ">
 
     <div class="row" style="padding: 0%" >
 
 
         <div class="col-sm-3" style="text-align: center;padding: 3%;">
 
-            <a href="#c1">gl</a>
+            <a href="#c1"></a>
             <button class="btn success"> Bridal Services</button>
             <!-- normal -->
 

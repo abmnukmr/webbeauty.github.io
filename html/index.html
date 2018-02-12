@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,6 +32,7 @@
                 if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
                     $("#navbar").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                     $("#navbar2").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#myNavbar").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
 
                     $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                     $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -44,6 +45,7 @@
                 } else {
                     $("#navbar").css("background", "transparent"); // if not, change it back to transparent
                     $("#navbar2").css("background", "transparent"); // if not, change it back to transparent
+                    $("#myNavbar").css("background", "transparent"); // if not, change it back to transparent
 
                     $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
                     $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -106,19 +108,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default  navbar-fixed-top" style="background: rgba(250,248,255,0); border-color: transparent; width: 100%;  z-index: 23;" id="navbar">
+<nav class="navbar navbar-default  navbar-fixed-top" style="background: rgba(250,248,255,0); border-color: transparent;   z-index: 23;" id="navbar">
     <div class="container-fluid" id="navbar2">
+
         <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar9" style="border-color: transparent;background-color: transparent;">
+                <span class="icon-bar" style="background: white"></span>
+                <span class="icon-bar" style="background: white"></span>
+            </button>
             <a href="index.html">
                 <img src="../assets/image/sbs.png" height="50" width="50"/>
             </a>
-
-
-
         </div>
-        <ul class="nav navbar-nav">
-            <li  style="color:white;"><a href="index.html" style="color:white; " id="home"> <b>HOME</b></a></li>
-            <li ><a  href="about.html" style="color:white; font-family: thinfont;" id="about">ABOUT </a>
+
+        <div class="collapse navbar-collapse" id="myNavbar9">
+          <ul class="nav navbar-nav">
+              <li  style="color:white;"><a href="index.html" style="color:white; " id="home"> <b>HOME</b></a></li>
+              <li ><a  href="about.html" style="color:white; font-family: thinfont;" id="about">ABOUT </a>
 
                 <!--
                 <ul class="dropdown-menu" style="background:#cb1b58; ">
@@ -126,10 +133,10 @@
                     <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">Team</a></li>
                 </ul>
                 -->
-            </li>
-            <li><a href="services.html" style="color:white; font-family: thinfont; " id="services">SERVICES</a></li>
-            <li><a href="course.html" style="color:white;font-family: thinfont; " id="cources">COURCES</a></li>
-            <li><a href="portfolio.html" style="color:white;font-family: thinfont;"  id="portfolio">PHORTFOLIO</a>
+              </li>
+              <li><a href="services.html" style="color:white; font-family: thinfont; " id="services">SERVICES</a></li>
+              <li><a href="course.html" style="color:white;font-family: thinfont; " id="cources">COURCES</a></li>
+              <li><a href="portfolio.html" style="color:white;font-family: thinfont;"  id="portfolio">PHORTFOLIO</a>
               <!--
                 <ul class="dropdown-menu" style="background:#cb1b58; ">
 
@@ -145,16 +152,16 @@
 
                 </ul>
                 -->
-            </li>
+             </li>
+          </ul>
 
-
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" style="color: white"><span class="glyphicon glyphicon-phone" style="color: white;font-family: thinfont;"></span> 8888888888</a></li>
-            <li><a href="#" style="color: white"><span class="glyphicon glyphicon-envelope" style="color: white;font-family: thinfont;"></span> sdfghjk@hgvbnj.com </a></li>
-        </ul>
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="#" style="color: white"><b>Phone:-</b> 9953777372</a></li>
+             <li><a href="#" style="color: white"><b>Email:-</b> meenasareen82@gmail.com </a></li>
+           </ul>
+        </div>
     </div>
+
 </nav>
 
 
@@ -219,30 +226,30 @@
     <div class="row" style="padding-left: 3%" >
 
 
-        <div class="col-sm-3" style="text-align: center">
+        <div class="col-sm-4" style="text-align: center">
 
             <!-- normal -->
             <h4 style="text-align: center;font-family:thinfont">ABOUT US </h4>
 
 
-            <div class="ih-item circle effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="#">
+            <div class="ih-item circle effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="about.html">
                 <div class="img" style="text-align: center">
                     <img src="../assets/image/cr1.png" alt="img" style="text-align: center">
                 </div>
                 <div class="info">
                     <h3>ABOUT US</h3>
-                    <p>From a humble beginning in 1991, Vidya has grown to become a professional name to be reckoned with.</p>
+                    <p>From a humble beginning in 1991, Sunitismakers has grown to become a professional name to be reckoned with.</p>
                 </div></a></div>
             <!-- end normal -->
         </div>
 
 
-        <div class="col-sm-3" style="text-align: center">
+        <div class="col-sm-4" style="text-align: center">
 
             <h4 style="text-align: center;font-family:thinfont">COURCES</h4>
 
             <!-- colored -->
-            <div class="ih-item circle colored effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="#">
+            <div class="ih-item circle colored effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="course.html">
                 <div class="img" style="text-align: center">
 
                     <img src="https://www.coursefeeder.com/sites/default/files/styles/channel_img/public/make-up-training-course_0.jpg?itok=gNjYgl2s" alt="img" style="text-align: center">
@@ -256,10 +263,10 @@
         </div>
 
 
-        <div class="col-sm-3" style="text-align: center">
+        <div class="col-sm-4" style="text-align: center">
            <h4 style="text-align: center;font-family:thinfont"> SERVICES</h4>
             <!-- colored -->
-            <div class="ih-item circle colored effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="#">
+            <div class="ih-item circle colored effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="services.html">
                 <div class="img" style="text-align: center">
 
                     <img src="https://www.vlccwellness.com/India/wp-content/uploads/2016/09/regular-b-s-thumb.jpg" alt="img" style="text-align: center">
@@ -274,22 +281,6 @@
 
 
 
-        <div class="col-sm-3" style="text-align: center">
-
-            <!-- colored -->
-            <h4 style="text-align: center;font-family:thinfont">SHOP</h4>
-
-            <div class="ih-item circle colored effect2 left_to_right" style="margin-right:auto;margin-left:auto"><a href="#">
-                <div class="img" style="text-align: center">
-
-                    <img src="http://www.savwi.com/wp-content/uploads/2017/03/angels-salon-suites-a-boutique-suite-featuring-the-also-wall-paints-designs-and-parlour-inspirations.jpg" alt="img" style="text-align: center">
-                </div>
-                <div class="info">
-                    <h3>Shop</h3>
-                    <p>Your favorite product is just a click away… Coming Soon…</p>
-                </div></a></div>
-            <!-- end colored -->
-        </div>
 
     </div>
 
@@ -302,7 +293,7 @@
 </div>
 
 
- <div class="container" style="height: 400px;width:100%;background: #010101 ">
+ <div class="container" style="height:auto;width:100%;background: #010101 ">
      <div class="row" style="padding-left: 3%" >
 
 
@@ -310,7 +301,9 @@
 
 
          <h3 style="color: rgba(250,248,255,0.25);font-family:thinfont;">ABOUT</h3>
-          <p style="color: rgba(255,255,255,0.22);text-align: justify;"> From a humble beginning in 1991, Vidya has grown to become a professional name to be reckoned with in the fields of Hair and Makeup. From catering to events like the “Commonwealth Games in 2010 where the hair and makeup was done for over 9,000 performers” which also landed her name in the “Limca book of records 2011” to the first ever “Formula 1 Grand Prix”, Vidya and her team have been servicing thousands of clients every year from around the globe. Since then, Vidya has shaped stunning and exquisite looks for Bollywood celebrities like Madhuri Dixit, Sushmita Sen, Aishwarya Rai, Deepika Padukone, Bipasha Basu, Malaika Arora Khan, Priyanka Chopra, Mallika Sherawat, Gul Panag, Yana, Anoushka Shankar, Abhay Deol and has given a new name </p>
+          <p style="color: rgba(255,255,255,0.22);text-align: justify;font-size: small;"> Since its inception in the year 1991, Sunitismakers has emerged as one of the best professional make up studios in Delhi. To have a great name and fame in the make-up industry, the team of professionals has strived very well and achieved a great success. The experts have serviced to a number of clientele across the world such as “Formula 1 Grand Prix”, Hair and makeup of 9000 participants of Commonwealth Games 2010 which also helped them to get a record in Limca book of records 2011. The skillful professionals of the studio never disappoint their customers and make them always look beautiful.
+              At Present, the professionals have decided to teach this art to the new-comers and make them best artists of their studios. With this vision, the owner has come up with an extensive range of different courses that potential students can opt as per their interests. These courses enable them to enhance their skill and make their career bright for better future. One thing that the expertise of the studio always shares with their client and customers is to become a skillful, dedicated and creative professional, it takes a lot of passion and time.
+          </p>
 
        </div>
 
@@ -331,10 +324,11 @@
      <div class="col-md-4" style="height: 400px;text-align: center;background:#030303;border-left: 1px solid rgba(255,255,255,0.22);height: 400px;">
 
          <div class="fb">
-             <img src="../assets/image/facebook.png" height="30" width="30" style="margin: auto;"/>
+             <a href="https://www.facebook.com/sunitibeautystudio">
+             <img src="../assets/image/facebook.png" height="30" width="30" style="margin: auto;"/></a>
          </div>
 
-         <div class="in">
+         <div class="inst">
              <img src="../assets/image/instagram.png" height="30" width="30" style="margin: auto;"/>
          </div>
 
@@ -346,13 +340,14 @@
 
      </div>
 
+     <footer style="background: #030303;width: 100%; height: 40px;margin-bottom: 0">
+
+         <p style="color: rgba(255,255,255,0.4);font-size: 12px;  text-align: center">  Copyright © 2018 Sunitismakers Theme All Rights Reserved | Care & Crafted By <b>VAIOTI</b> Terms & Conditions Privacy Policy Cancellation Policy</p>
+     </footer>
+
  </div>
 
 
-     <footer style="background: #030303;width: 100%; height: 40px;">
-
-         <p style="color: rgba(255,255,255,0.4);font-size: 12px;  text-align: center">  Copyright © 2018 Vidya Tikari Theme All Rights Reserved | Care & Crafted By <b>VAIOTI</b> Terms & Conditions Privacy Policy Cancellation Policy</p>
-     </footer>
 
 
 
@@ -367,18 +362,6 @@
 
 
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
 
 
 

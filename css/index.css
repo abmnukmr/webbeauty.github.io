@@ -187,9 +187,9 @@ body {
 .tw:hover{
     width: 30px;height: 30px; border-radius: 50px; background: #50d8ff;margin-top: 20px;
 }
-.in{
+.inst{
     border: 1px  solid #ffffff;width: 30px;height: 30px; border-radius: 50px; background:linear-gradient(-270deg, rgba(203, 42, 158, 0), rgba(255, 14, 133, 0));margin-top: 20px;
 }
-.in:hover{
+.inst:hover{
     width: 30px;height: 30px; border-radius: 50px; background:linear-gradient(-270deg, #cb2a9e,#ff0e85);margin-top: 20px;
 }

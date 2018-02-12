@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                    $("#navbar").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#navbar2").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#myNavbar").css("background", "linear-gradient(-270deg, #cb2a9e,#ff0e85)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+                    $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#cources").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#services").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#portfolio").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#webname").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+
+                } else {
+                    $("#navbar").css("background", "transparent"); // if not, change it back to transparent
+                    $("#navbar2").css("background", "transparent"); // if not, change it back to transparent
+                    $("#myNavbar").css("background", "transparent"); // if not, change it back to transparent
+
+                    $("#about").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#home").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#cources").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#services").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#portfolio").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                    $("#webname").css("color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+
+
+                }
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top" style="background: rgba(250,248,25,8); border-color: transparent;   z-index: 23;" id="navbar">
+    <div class="container-fluid" id="navbar2">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar9" style="border-color: transparent">
+                <span class="icon-bar" style="background: white"></span>
+                <span class="icon-bar" style="background: white"></span>
+            </button>
+            <a href="index.html">
+                <img src="../assets/image/sbs.png" height="50" width="50"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar9">
+            <ul class="nav navbar-nav">
+                <li  style="color:white;"><a href="index.html" style="color:white; " id="home"> <b>HOME</b></a></li>
+                <li ><a  href="about.html" style="color:white; font-family: thinfont;" id="about">ABOUT </a>
+
+                    <!--
+                    <ul class="dropdown-menu" style="background:#cb1b58; ">
+                        <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">About Us</a></li>
+                        <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">Team</a></li>
+                    </ul>
+                    -->
+                </li>
+                <li><a href="services.html" style="color:white; font-family: thinfont; " id="services">SERVICES</a></li>
+                <li><a href="course.html" style="color:white;font-family: thinfont; " id="cources">COURCES</a></li>
+                <li><a href="portfolio.html" style="color:white;font-family: thinfont;"  id="portfolio">PHORTFOLIO</a>
+                    <!--
+                      <ul class="dropdown-menu" style="background:#cb1b58; ">
+
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"   > Bridal</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Carousel</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"> Party Makeup</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Editorial</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)">Events</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)" > Seminars</a></li>
+                          <li><a href="#" style="color: #faf8ff;background: rgba(250,248,255,0)"> Shows</a></li>
+
+
+
+                      </ul>
+                      -->
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" style="color: white"><b>Phone:-</b> 9953777372</a></li>
+                <li><a href="#" style="color: white"><b>Email:-</b> meenasareen82@gmail.com </a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+
+<div class="container">
+    <h3>Collapsible Navbar</h3>
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+
+    <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>
+
+</body>
+</html>
